@@ -101,8 +101,8 @@ int main (){
     std::vector<int> numbersone = {12,25,31,47,58};
     auto average = 0.0f;
 
-    for (auto i = 0; i < numbersone.size(); i++)
-        average += numbersone[i];
+    for (int i : numbersone)
+        average += i;
     average /= numbersone.size();
     std::cout << "Average: " << average << std::endl;
 
