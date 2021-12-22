@@ -1,6 +1,4 @@
 #include <iostream>
-#include <cstdint>
-#include <string>
 
 //Preprocessor Directive.
 // Using define is generally considered bad practice. It is better to make the variables const qualified.
