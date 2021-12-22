@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include "../03_StructuresClassAndPointers/Student.h"
 #include "../03_StructuresClassAndPointers/Course.h"
 #include "../03_StructuresClassAndPointers/Grade.h"
@@ -19,8 +18,7 @@ int main(){
     std::cout << "Enter a student ID: ";
     std::cin >> id;
 
-    std::string student_str = SR.get_student_name(id);
-    std::cout << "The GPA for " << student_str << " is " << SR.get_GPA(id) << std::endl;
+    SR.ReportCard(id);
 
     std::cout << "~~* Creating Functions Example Beginning *~~" << std::endl;
 
