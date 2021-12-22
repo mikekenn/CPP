@@ -3,11 +3,14 @@
 //
 
 #include "Student.h"
+
+#include <utility>
+
 /// Overloaded constructor.
 /// \param [in] the_id Enter Students ID.
 /// \param [in] the_name Enter Students Name.
 Student::Student(int the_id, std::string the_name)
-:id(the_id), name(the_name)
+:id(the_id), name(std::move(std::move(the_name)))
 {}
 
 /// Returns a Students ID.

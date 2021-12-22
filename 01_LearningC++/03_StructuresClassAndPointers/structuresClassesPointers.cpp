@@ -98,10 +98,10 @@ int main(){
     std::vector<cow_class> cattle;
 
     // Adding cows to cattle vector.
-    cattle.push_back(cow_class("Betty", 6, meat));
-    cattle.push_back(cow_class("Libby", 4, hide));
-    cattle.push_back(cow_class("Trudy", 5, pet));
-    cattle.push_back(cow_class("Betsy", 2, dairy));
+    cattle.emplace_back("Betty", 6, meat);
+    cattle.emplace_back("Libby", 4, hide);
+    cattle.emplace_back("Trudy", 5, pet);
+    cattle.emplace_back("Betsy", 2, dairy);
 
     // Printing.
     std::cout << "The first cow is " << cattle.begin()->get_name() << std::endl;

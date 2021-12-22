@@ -14,9 +14,9 @@ private:
     unsigned char credits;
 public:
     Course(int, std::string, unsigned char);
-    int get_id() const;
-    std::string get_name() const;
-    int get_credits() const;
+    [[nodiscard]] int get_id() const;
+    [[nodiscard]] std::string get_name() const;
+    [[nodiscard]] int get_credits() const;
 };
 
 

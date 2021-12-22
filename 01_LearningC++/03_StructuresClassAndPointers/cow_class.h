@@ -15,8 +15,8 @@ private:
 public:
     cow_class(std::string, int, unsigned char);
     std::string get_name();
-    int get_age() const;
-    unsigned char get_purpose() const ;
+    [[nodiscard]] int get_age() const;
+    [[nodiscard]] unsigned char get_purpose() const ;
     void set_age(int);
 };
 

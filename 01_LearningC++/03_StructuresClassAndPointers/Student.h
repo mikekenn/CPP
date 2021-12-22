@@ -13,8 +13,8 @@ private:
     std::string name;
 public:
     Student(int, std::string);
-    int get_id() const;
-    std::string get_name() const;
+    [[nodiscard]] int get_id() const;
+    [[nodiscard]] std::string get_name() const;
 };
 
 #endif //CPP_STUDENT_H

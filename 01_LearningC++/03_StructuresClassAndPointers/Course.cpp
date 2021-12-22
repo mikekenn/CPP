@@ -3,12 +3,16 @@
 //
 
 #include "Course.h"
+
+#include <utility>
+
+#include <utility>
 /// Overloaded constructor.
 /// @param [in] the_id Course id number.
 /// @param [in] the_name Course name.
 /// @param [in] the_credits Course credits.
 Course::Course(int the_id, std::string the_name, unsigned char the_credits)
-:id(the_id), name(the_name), credits(the_credits)
+:id(the_id), name(std::move(std::move(the_name))), credits(the_credits)
 {
 
 }
