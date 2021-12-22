@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+*.ninja_deps.recompact
+*cmake_install.cmake
+*CMakeLists.txt
+*cmake_install.cmake
+*.ninja_log
+*cmake-build-debug
+*.idea
+*MakeLists.txt
+
